@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовая кнопка</title>
+    <script src="https://api.bitrix24.com/api/v1/"></script>
+</head>
+<body>
+    <button onclick="showTestMessage()" style="padding: 10px; background: #2fc22f; color: white; border: none;">
+        Проверка
+    </button>
+
+    <script>
+        function showTestMessage() {
+            BX24.init(() => {
+                // Выводим системное сообщение
+                BX24.alert("Тест: Кнопка работает!");
+            });
+        }
+    </script>
+</body>
+</html>
